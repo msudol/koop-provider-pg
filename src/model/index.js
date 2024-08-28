@@ -21,8 +21,8 @@ class Model {
         throw new Error('Invalid result from getGeometryColumnName');
       }
       
-      const geom = result.f_geometry_column;
-      const srid = result.srid;
+      const geom = result?.f_geometry_column || 'null'
+      const srid = result?.srid || 'null'
       const limit = parseInt(pgLimit);
       const offset = 0;
 

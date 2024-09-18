@@ -30,13 +30,8 @@ class Model {
         });
       }
       
-<<<<<<< HEAD
-      const geom = result?.f_geometry_column || 'null'
-      const srid = result?.srid || 'null'
-=======
-      const geom = geomColumnName.f_geometry_column;
-      const srid = geomColumnName.srid;
->>>>>>> be6f6690f562b7aacacb388c06a024107e54949e
+      const geom = geomColumnName.f_geometry_column || 'null';
+      const srid = geomColumnName.srid || 'null';
       const limit = parseInt(pgLimit);
       const offset = 0;
 
